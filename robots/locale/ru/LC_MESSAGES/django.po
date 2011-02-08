@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-08 13:15+0500\n"
+"POT-Creation-Date: 2011-02-08 22:40+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: admin.py:11
 msgid "URL patterns"
-msgstr "Шаблон URL"
+msgstr "Шаблоны URL"
 
 #: admin.py:12
 msgid "Advanced options"
@@ -40,9 +40,11 @@ msgid ""
 "Some major search engines allow an asterisk (*) as a wildcard and a dollar "
 "sign ($) to match the end of the URL, e.g., '/*.jpg$'."
 msgstr ""
-"Учитывается регистр. Если не указан символ конца строки, считается что под "
+"Внимание: учитывается регистр!<br />Если в конце пропущен слэш, то под "
 "шаблон попадут все файлы, путь к которым начинается с таких же символов. "
-"Например: под шаблон \"/admin\" так же попадет \"/admin.html\"."
+"Например: под шаблон \"/admin\" так же попадет \"/admin.html\".<br />"
+"Часть поисковых систем понимают звездочку (*) как произвольное количество "
+"любых символов и знак доллара ($) как символ конца URL. Например: \"/*.jpg$\""
 
 #: models.py:19 models.py:20
 msgid "url"
@@ -64,7 +66,7 @@ msgstr ""
 
 #: models.py:46 models.py:83
 msgid "allowed"
-msgstr "разрешено"
+msgstr "разрешенные URL"
 
 #: models.py:47
 msgid "The URLs which are allowed to be accessed by bots."
@@ -72,7 +74,7 @@ msgstr "URL адреса разрешенные для индексации по
 
 #: models.py:51 models.py:87
 msgid "disallowed"
-msgstr "запрещено"
+msgstr "запрещенные URL"
 
 #: models.py:52
 msgid "The URLs which are not allowed to be accessed by bots."
@@ -107,11 +109,11 @@ msgstr ""
 
 #: models.py:75
 msgid "rule"
-msgstr "правило"
+msgstr "правило индексации"
 
 #: models.py:76
 msgid "rules"
-msgstr "правила"
+msgstr "правила индексации"
 
 #: models.py:82 models.py:86
 msgid "and"
